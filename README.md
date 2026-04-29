@@ -1,5 +1,7 @@
 # Cardinal2 — BTC<->Cardano Bridge Prototype
 
+> ⚠️ **Disclaimer**: This is a research prototype accompanying an academic paper. It is intended for testing and evaluation purposes only. The code has not been audited and must not be used with real funds or in production environments. Private keys are handled insecurely by design.
+
 A proof-of-concept implementation of a Bitcoin<->Cardano bridge following the TOOP peg-out protocol. The prototype covers both the peg-in (BTC -> wBTC) and peg-out (wBTC -> BTC) directions, with on-chain transactions deployed on Bitcoin testnet and Cardano Preprod testnet. An additional Ethereum ERC-721 implementation is included to demonstrate compatibility with account-based blockchains.
 
 ## Repository Structure
