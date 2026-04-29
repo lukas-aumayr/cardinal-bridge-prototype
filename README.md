@@ -7,7 +7,7 @@ A proof-of-concept implementation of the Cardinal bridge protocol, covering two 
 ## Repository Structure
 
 ```
-cardinal2/
+cardinal/
 ├── bitcoin/                 # Bitcoin transaction graph (Python)
 │   ├── main.py
 │   ├── transactions/
@@ -110,7 +110,7 @@ Builds and prints `LockReqTx`, `LockTx`, `AbortTx`, and `SpendTx`. To broadcast,
 
 **Setup**: replace the placeholder UTxO inputs in `main.py` with real testnet UTxOs funded from a faucet. The secret and hash lock must match the values in `config.py` on the Cardano side.
 
-See [`ethereum/README.md`](bitcoin/README.md) for further setup and deployment instructions.
+See [`bitcoin/README.md`](bitcoin/README.md) for further setup and deployment instructions.
 
 ## Ethereum
 
