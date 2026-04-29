@@ -1,0 +1,272 @@
+{
+  "preamble": {
+    "title": "cardinal/bridge-validators",
+    "description": "Aiken contracts for project 'cardinal/bridge-validators'",
+    "version": "0.0.0",
+    "plutusVersion": "v3",
+    "compiler": {
+      "name": "Aiken",
+      "version": "v1.1.21+unknown"
+    },
+    "license": "Apache-2.0"
+  },
+  "validators": [
+    {
+      "title": "bridge.burn_tx.spend",
+      "datum": {
+        "title": "datum",
+        "schema": {
+          "$ref": "#/definitions/bridge~1CommitBurnDatum"
+        }
+      },
+      "redeemer": {
+        "title": "redeemer",
+        "schema": {
+          "$ref": "#/definitions/bridge~1BurnRedeemer"
+        }
+      },
+      "compiledCode": "5901b201010029800aba2aba1aba0aab9faab9eaab9dab9a488888896600264653001300800198041804800cc0200092225980099b8748008c01cdd500144c8cc896600266e1d2000300a375400d132323259800980900144c8cc004004dd61809002112cc0040062b30013370e900018079baa0068acc004c8c8cc004004dd6180a980b180b180b180b180b180b180b180b18091baa00b2259800800c528456600266e3cdd7180b000801c528c4cc008008c05c0050112028375c602660206ea8c04cc040dd500344c8cc004004c8cc004004dd5980a980b180b180b180b18091baa00b2259800800c52f5c113233223322330020020012259800800c400e264660366e9ccc06cdd48029980d980c0009980d980c800a5eb80cc00c00cc074008c06c0050191bab3016003375c6026002660060066030004602c00280a0896600200314a115980099b88375a602a602c602c6eb0c05400520008a51899801001180b000a020404d14a080722c807226466006006602a0046eb8c04c00501145900f1bae30100013010001300b375400d16402460180026018601a00260106ea800a2c8030601000260066ea802229344d95900101",
+      "hash": "6deb7d9af583a771964cddcff0d3657f63d4ed67d8fcaa330b59e5a6"
+    },
+    {
+      "title": "bridge.burn_tx.else",
+      "redeemer": {
+        "schema": {}
+      },
+      "compiledCode": "5901b201010029800aba2aba1aba0aab9faab9eaab9dab9a488888896600264653001300800198041804800cc0200092225980099b8748008c01cdd500144c8cc896600266e1d2000300a375400d132323259800980900144c8cc004004dd61809002112cc0040062b30013370e900018079baa0068acc004c8c8cc004004dd6180a980b180b180b180b180b180b180b180b18091baa00b2259800800c528456600266e3cdd7180b000801c528c4cc008008c05c0050112028375c602660206ea8c04cc040dd500344c8cc004004c8cc004004dd5980a980b180b180b180b18091baa00b2259800800c52f5c113233223322330020020012259800800c400e264660366e9ccc06cdd48029980d980c0009980d980c800a5eb80cc00c00cc074008c06c0050191bab3016003375c6026002660060066030004602c00280a0896600200314a115980099b88375a602a602c602c6eb0c05400520008a51899801001180b000a020404d14a080722c807226466006006602a0046eb8c04c00501145900f1bae30100013010001300b375400d16402460180026018601a00260106ea800a2c8030601000260066ea802229344d95900101",
+      "hash": "6deb7d9af583a771964cddcff0d3657f63d4ed67d8fcaa330b59e5a6"
+    },
+    {
+      "title": "bridge.commit_burn.spend",
+      "datum": {
+        "title": "datum",
+        "schema": {
+          "$ref": "#/definitions/bridge~1CommitBurnDatum"
+        }
+      },
+      "redeemer": {
+        "title": "_redeemer",
+        "schema": {
+          "$ref": "#/definitions/Data"
+        }
+      },
+      "compiledCode": "58ba01010029800aba2aba1aab9faab9eaab9dab9a48888896600264646644b30013370e900118031baa00189919912cc004cdc3a400060126ea800626464660020026eb0c038c03cc03cc03cc03cc03cc03cc03cc03cc030dd51807004912cc00400629422b30013371e6eb8c03c00400e29462660040046020002805900e1bae300c300a3754601860146ea80062c8040c028004c028c02c004c01cdd5000c59005180380098039804000980380098019baa0078a4d13656400401",
+      "hash": "9a265728f95db574df40dd3e5a425a2127ac53bd6968e20659bd2ce7"
+    },
+    {
+      "title": "bridge.commit_burn.else",
+      "redeemer": {
+        "schema": {}
+      },
+      "compiledCode": "58ba01010029800aba2aba1aab9faab9eaab9dab9a48888896600264646644b30013370e900118031baa00189919912cc004cdc3a400060126ea800626464660020026eb0c038c03cc03cc03cc03cc03cc03cc03cc03cc030dd51807004912cc00400629422b30013371e6eb8c03c00400e29462660040046020002805900e1bae300c300a3754601860146ea80062c8040c028004c028c02c004c01cdd5000c59005180380098039804000980380098019baa0078a4d13656400401",
+      "hash": "9a265728f95db574df40dd3e5a425a2127ac53bd6968e20659bd2ce7"
+    },
+    {
+      "title": "bridge.release_tx.spend",
+      "datum": {
+        "title": "datum",
+        "schema": {
+          "$ref": "#/definitions/bridge~1ReleaseDatum"
+        }
+      },
+      "redeemer": {
+        "title": "redeemer",
+        "schema": {
+          "$ref": "#/definitions/bridge~1ReleaseRedeemer"
+        }
+      },
+      "compiledCode": "5901ef01010029800aba2aba1aab9faab9eaab9dab9a48888896600264653001300700198039804000cdc3a400530070024888966002600460106ea800e26466453001159800980098059baa002899912cc004c00cc034dd5004c4c96600266e3cdc91bae3011001375c6022601e6ea800e2b30019800a45204095d7268b1c1b42967d291090e122aafcd34384222ed6aa126eda951e72833e009bae30113012300f3754007375c60226024002b9544cc00801cdd71808980918091809180918079baa0038a50403514a08068c038dd5004c56600264b30013008300e37540031337126eb4c044c048c048c048c03cdd50019bad3011300f375400314a08068c040c038dd5180818071baa30103011301130113011301130113011300e375400d133001006375c602060226022601c6ea800a294100c2018300e300c37540044464660020026eb0c044c048c048c048c048c048c048c048c048c03cdd5001912cc00400629422b30013371e6eb8c04800400e29462660040046026002807101145900a4c02cdd5003cc03800d22259800980200144c8c8cc8966002602c0070078b2028375c60260026eb8c04c008c04c004c03cdd50054566002601000515980098079baa00a801c5901045900d201a180618068009b8748000c024dd5001c590070c01c004c00cdd5003c52689b2b20021",
+      "hash": "3005903f1aaaf1b151e3a78f413e8f652a35674b7a5b13f3962ff777"
+    },
+    {
+      "title": "bridge.release_tx.else",
+      "redeemer": {
+        "schema": {}
+      },
+      "compiledCode": "5901ef01010029800aba2aba1aab9faab9eaab9dab9a48888896600264653001300700198039804000cdc3a400530070024888966002600460106ea800e26466453001159800980098059baa002899912cc004c00cc034dd5004c4c96600266e3cdc91bae3011001375c6022601e6ea800e2b30019800a45204095d7268b1c1b42967d291090e122aafcd34384222ed6aa126eda951e72833e009bae30113012300f3754007375c60226024002b9544cc00801cdd71808980918091809180918079baa0038a50403514a08068c038dd5004c56600264b30013008300e37540031337126eb4c044c048c048c048c03cdd50019bad3011300f375400314a08068c040c038dd5180818071baa30103011301130113011301130113011300e375400d133001006375c602060226022601c6ea800a294100c2018300e300c37540044464660020026eb0c044c048c048c048c048c048c048c048c048c03cdd5001912cc00400629422b30013371e6eb8c04800400e29462660040046026002807101145900a4c02cdd5003cc03800d22259800980200144c8c8cc8966002602c0070078b2028375c60260026eb8c04c008c04c004c03cdd50054566002601000515980098079baa00a801c5901045900d201a180618068009b8748000c024dd5001c590070c01c004c00cdd5003c52689b2b20021",
+      "hash": "3005903f1aaaf1b151e3a78f413e8f652a35674b7a5b13f3962ff777"
+    },
+    {
+      "title": "bridge.wbtc_policy.mint",
+      "redeemer": {
+        "title": "redeemer",
+        "schema": {
+          "$ref": "#/definitions/bridge~1MintRedeemer"
+        }
+      },
+      "compiledCode": "5901ce01010029800aba2aba1aba0aab9faab9eaab9dab9a488888896600264653001300800198041804800cdc3a400130080024888966002600460106ea800e33001375c601860126ea800e2b30013002300837540091329800a441204095d7268b1c1b42967d291090e122aafcd34384222ed6aa126eda951e72833e009bae300d300e0019bae300d0015ca8c034c024dd500244c8cc004004c8cc004004dd59807180798079807980798059baa0032259800800c52f5c113233223322330020020012259800800c400e264660286e9ccc050dd48029980a18088009980a1809000a5eb80cc00c00cc058008c0500050121bab300f003375c6018002660060066022004601e0028068896600200314a115980099b88375a601c601e601e6eb0c03800520008a518998010011807800a0124030803a60106ea8011222598009802800c4c8c8ca60026eb8c0480066eb8c04800e6eb8c04800922259800980b00240222c80986024002602200260186ea801e2b30013370e9001000c4c8c8c9660026026005132330010013758602600844b3001001803c4c8cc00c00cc058008dd7180a000a0248b2020375c6022002602200260186ea801e2c805100a22c8038601000260066ea802229344d95900101",
+      "hash": "1fed8410c11c0e76092f6ad52b2be87e41d57dc98d7b7282205fc604"
+    },
+    {
+      "title": "bridge.wbtc_policy.else",
+      "redeemer": {
+        "schema": {}
+      },
+      "compiledCode": "5901ce01010029800aba2aba1aba0aab9faab9eaab9dab9a488888896600264653001300800198041804800cdc3a400130080024888966002600460106ea800e33001375c601860126ea800e2b30013002300837540091329800a441204095d7268b1c1b42967d291090e122aafcd34384222ed6aa126eda951e72833e009bae300d300e0019bae300d0015ca8c034c024dd500244c8cc004004c8cc004004dd59807180798079807980798059baa0032259800800c52f5c113233223322330020020012259800800c400e264660286e9ccc050dd48029980a18088009980a1809000a5eb80cc00c00cc058008c0500050121bab300f003375c6018002660060066022004601e0028068896600200314a115980099b88375a601c601e601e6eb0c03800520008a518998010011807800a0124030803a60106ea8011222598009802800c4c8c8ca60026eb8c0480066eb8c04800e6eb8c04800922259800980b00240222c80986024002602200260186ea801e2b30013370e9001000c4c8c8c9660026026005132330010013758602600844b3001001803c4c8cc00c00cc058008dd7180a000a0248b2020375c6022002602200260186ea801e2c805100a22c8038601000260066ea802229344d95900101",
+      "hash": "1fed8410c11c0e76092f6ad52b2be87e41d57dc98d7b7282205fc604"
+    }
+  ],
+  "definitions": {
+    "ByteArray": {
+      "dataType": "bytes"
+    },
+    "Data": {
+      "title": "Data",
+      "description": "Any Plutus data."
+    },
+    "Int": {
+      "dataType": "integer"
+    },
+    "List<aiken/crypto/VerificationKeyHash>": {
+      "dataType": "list",
+      "items": {
+        "$ref": "#/definitions/aiken~1crypto~1VerificationKeyHash"
+      }
+    },
+    "aiken/crypto/VerificationKeyHash": {
+      "title": "VerificationKeyHash",
+      "dataType": "bytes"
+    },
+    "bridge/BurnRedeemer": {
+      "title": "BurnRedeemer",
+      "anyOf": [
+        {
+          "title": "BurnSpend",
+          "dataType": "constructor",
+          "index": 0,
+          "fields": [
+            {
+              "title": "g_id",
+              "$ref": "#/definitions/List<aiken~1crypto~1VerificationKeyHash>"
+            },
+            {
+              "title": "instance_id",
+              "$ref": "#/definitions/ByteArray"
+            }
+          ]
+        }
+      ]
+    },
+    "bridge/CommitBurnDatum": {
+      "title": "CommitBurnDatum",
+      "anyOf": [
+        {
+          "title": "CommitBurnDatum",
+          "dataType": "constructor",
+          "index": 0,
+          "fields": [
+            {
+              "title": "pk_C",
+              "$ref": "#/definitions/aiken~1crypto~1VerificationKeyHash"
+            },
+            {
+              "title": "instance_id",
+              "$ref": "#/definitions/ByteArray"
+            },
+            {
+              "title": "ek_C",
+              "$ref": "#/definitions/ByteArray"
+            }
+          ]
+        }
+      ]
+    },
+    "bridge/MintRedeemer": {
+      "title": "MintRedeemer",
+      "anyOf": [
+        {
+          "title": "Mint",
+          "dataType": "constructor",
+          "index": 0,
+          "fields": [
+            {
+              "title": "preimage",
+              "$ref": "#/definitions/ByteArray"
+            },
+            {
+              "title": "operator_sig",
+              "$ref": "#/definitions/ByteArray"
+            },
+            {
+              "title": "lock_tx_id",
+              "$ref": "#/definitions/ByteArray"
+            }
+          ]
+        },
+        {
+          "title": "Burn",
+          "dataType": "constructor",
+          "index": 1,
+          "fields": [
+            {
+              "title": "g_id",
+              "$ref": "#/definitions/List<aiken~1crypto~1VerificationKeyHash>"
+            },
+            {
+              "title": "instance_id",
+              "$ref": "#/definitions/ByteArray"
+            }
+          ]
+        }
+      ]
+    },
+    "bridge/ReleaseDatum": {
+      "title": "ReleaseDatum",
+      "anyOf": [
+        {
+          "title": "ReleaseDatum",
+          "dataType": "constructor",
+          "index": 0,
+          "fields": [
+            {
+              "title": "hash_h",
+              "$ref": "#/definitions/ByteArray"
+            },
+            {
+              "title": "lock_tx_id",
+              "$ref": "#/definitions/ByteArray"
+            },
+            {
+              "title": "operator_pkh",
+              "$ref": "#/definitions/aiken~1crypto~1VerificationKeyHash"
+            },
+            {
+              "title": "expiry",
+              "$ref": "#/definitions/Int"
+            },
+            {
+              "title": "recipient",
+              "$ref": "#/definitions/aiken~1crypto~1VerificationKeyHash"
+            }
+          ]
+        }
+      ]
+    },
+    "bridge/ReleaseRedeemer": {
+      "title": "ReleaseRedeemer",
+      "anyOf": [
+        {
+          "title": "Release",
+          "dataType": "constructor",
+          "index": 0,
+          "fields": [
+            {
+              "title": "preimage",
+              "$ref": "#/definitions/ByteArray"
+            },
+            {
+              "title": "operator_sig",
+              "$ref": "#/definitions/ByteArray"
+            }
+          ]
+        },
+        {
+          "title": "Abort",
+          "dataType": "constructor",
+          "index": 1,
+          "fields": []
+        }
+      ]
+    }
+  }
+}

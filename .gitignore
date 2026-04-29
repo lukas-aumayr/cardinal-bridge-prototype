@@ -1,0 +1,30 @@
+# Secrets
+.env
+keys/
+
+# Python
+bridge-env/
+__pycache__/
+*.pyc
+*.pyo
+
+# Foundry
+ethereum/out/
+ethereum/cache/
+ethereum/broadcast/
+ethereum/.env
+
+# Hardhat
+ethereum/artifacts/
+ethereum/cache/
+ethereum/node_modules/
+ethereum/.env
+ethereum/out/
+ethereum/broadcast/
+
+# MacOS
+.DS_Store
+
+# Project specific
+g_id.json
+faucet-tx.txt
