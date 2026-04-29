@@ -2,7 +2,7 @@
 
 > ⚠️ **Disclaimer**: This is a research prototype accompanying an academic paper. It is intended for testing and evaluation purposes only. The code has not been audited and must not be used with real funds or in production environments. Private keys are handled insecurely by design.
 
-A proof-of-concept implementation of the Cardinal bridge protocol, covering two instantiations: a Bitcoin<->Cardano bridge and a Bitcoin<->Ethereum bridge. The Bitcoin<->Cardano prototype implements the full peg-in (BTC -> wBTC) and peg-out (wBTC -> BTC) cycle, with on-chain transactions deployed on Bitcoin testnet and Cardano Preprod testnet. The Bitcoin<->Ethereum prototype implements the mint/burn logic as an ERC-721 contract on Ethereum Sepolia testnet, demonstrating compatibility of the protocol with account-based blockchains.
+A proof-of-concept implementation of the Cardinal bridge protocol, covering two instantiations: a Bitcoin<->Cardano bridge and a Bitcoin<->Ethereum bridge. The Bitcoin<->Cardano prototype implements the full peg-in (BTC -> wBTC) and peg-out (wBTC -> BTC) cycle, with on-chain transactions deployed on Bitcoin testnet and Cardano Preprod testnet. The Bitcoin<->Ethereum prototype implements the full cycle, in particular the mint/burn logic as an ERC-721 contract on Ethereum Sepolia testnet, demonstrating compatibility of the protocol with account-based blockchains.
 
 ## Repository Structure
 
