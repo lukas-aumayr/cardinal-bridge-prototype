@@ -1,4 +1,4 @@
-# Cardinal2 — BTC<->Cardano Bridge Prototype
+# Cardinal — BTC<->Cardano Bridge Prototype
 
 > ⚠️ **Disclaimer**: This is a research prototype accompanying an academic paper. It is intended for testing and evaluation purposes only. The code has not been audited and must not be used with real funds or in production environments. Private keys are handled insecurely by design.
 
@@ -110,18 +110,8 @@ Builds and prints `LockReqTx`, `LockTx`, `AbortTx`, and `SpendTx`. To broadcast,
 
 **Setup**: replace the placeholder UTxO inputs in `main.py` with real testnet UTxOs funded from a faucet. The secret and hash lock must match the values in `config.py` on the Cardano side.
 
+See [`ethereum/README.md`](bitcoin/README.md) for further setup and deployment instructions.
+
 ## Ethereum
 
 See [`ethereum/README.md`](ethereum/README.md) for setup and deployment instructions.
-
-## Testnet Transactions
-
-| Chain | Transaction | TxId |
-|---|---|---|
-| Cardano | MintTx | `26d72626...` |
-| Cardano | ReleaseTx | `32b1f625...` |
-| Cardano | CommitBurnTx | `d2ac0c06...` |
-| Cardano | BurnTx | `50a1abbf...` |
-| Ethereum | Deploy | `0xdb31be40...` |
-| Ethereum | Mint | `0x4c29b596...` |
-| Ethereum | CommitBurn | `0xa3f2722f...` |
