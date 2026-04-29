@@ -1,4 +1,4 @@
-# Cardinal — BTC<->Cardano Bridge Prototype
+# Cardinal Bridge Prototype
 
 > ⚠️ **Disclaimer**: This is a research prototype accompanying an academic paper. It is intended for testing and evaluation purposes only. The code has not been audited and must not be used with real funds or in production environments. Private keys are handled insecurely by design.
 
