@@ -67,6 +67,15 @@ foundryup
    ```bash
    python keygen.py
    ```
+   Then update the operator verification key in `bridge-validators/validators/bridge.ak`:
+   ```python
+   # Print the op0 verification key bytes
+   python3 -c "from pycardano import *; vk = PaymentVerificationKey.load('keys/op0.vkey'); print(bytes(vk).hex())"
+   ```
+   Replace the `operator_vk` constant in `bridge.ak` with the output, then recompile:
+   ```bash
+   cd bridge-validators && aiken build && cd ..
+   ```
 
 3. Fund addresses from faucets:
    - Cardano Preprod: https://docs.cardano.org/cardano-testnets/tools/faucet
